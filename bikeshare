@@ -81,7 +81,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+  def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -92,7 +92,7 @@ def time_stats(df):
 
     # TO DO: display the most common day of week
 
-    df['day'].mode()
+Us    df['day'].mode()
     # TO DO: display the most common start hour
     df['Start Time'].mode()
 
@@ -142,13 +142,14 @@ def user_stats(df):
     start_time = time.time()
 
     # TO DO: Display counts of user types
-
+    count_types = df['Enter the name of the column consisting of user type'].value_counts()
 
     # TO DO: Display counts of gender
+    gender_count = df['gender'].value_counts()
 
 
     # TO DO: Display earliest, most recent, and most common year of birth
-
-
+Use similar technique as previously done.
+    
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
